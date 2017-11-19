@@ -8,4 +8,4 @@ var wishList = new Schema({
     products: [{type: ObjectId, ref: "Product"}]
 })
 
-module.export = mongoose.model("WishList", wishList)
+module.exports = mongoose.model("WishList", wishList)
