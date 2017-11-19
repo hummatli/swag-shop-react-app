@@ -16,6 +16,9 @@ mongoose.connect(dburl, { useMongoClient: true }, function(err) {
     }
 } )
 
+var Product = require('./model/product')
+var WishList = require('./model/wishlist')
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
