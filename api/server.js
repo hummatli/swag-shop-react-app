@@ -22,6 +22,11 @@ var WishList = require('./model/wishlist')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
+app.get("/", function(req, res) {
+    console.log("Home")
+    res.send("Home")
+})
+
 app.post("/product", function(req, res) {
     var product = new Product()
     product.title = req.body.title
@@ -36,9 +41,14 @@ app.post("/product", function(req, res) {
     })
 })
 
-app.get("/", function(req, res) {
-    console.log("Home")
-    res.send("Home")
+app.get("/product", function(req, res) {
+    Product.find({}, function(err, products) {
+        if (err) {
+            res.status(500).send({error: "Could not fetch products"})
+        } else {
+            res.send(products)
+        }
+    })
 })
 
 app.listen(3000, function() {
