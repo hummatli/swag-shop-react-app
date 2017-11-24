@@ -41,7 +41,7 @@ class WishList extends Component {
 	
 	render() {
 		return (
-			<div className="card">
+			<div className="card wishlist">
 				<div className="card-bock">
 					<h4 className="card-title">{this.props.title}</h4>
 					<p>{this.props.comment}</p>

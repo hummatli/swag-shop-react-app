@@ -1,9 +1,10 @@
 .pc-condensed {
 	text-align: left;
+	padding: 10px 10px
 }
 
 .pc-condensed a {
-	margin-right: 25px;
+	margin-right: 15px;
 	display: inline-block;
 }
 
