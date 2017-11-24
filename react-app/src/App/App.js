@@ -59,7 +59,8 @@ class App extends Component {
 					</div>
 				</div>
 				<div className="col-sm-4">
-					<WishList />
+					<WishList title="Wish List"/>
+					<WishList title="Wish List 2" comment="Showing reusability of component"/>
 				</div>
 			</div>
 		</div>

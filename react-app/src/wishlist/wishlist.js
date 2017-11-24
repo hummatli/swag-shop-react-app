@@ -43,7 +43,8 @@ class WishList extends Component {
 		return (
 			<div className="card">
 				<div className="card-bock">
-					<h4 className="card-title">Wish List</h4>
+					<h4 className="card-title">{this.props.title}</h4>
+					<p>{this.props.comment}</p>
 					<ul className="list-group">
 						{this.createWishList()}
 					</ul>
