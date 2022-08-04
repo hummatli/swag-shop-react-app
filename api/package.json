@@ -12,7 +12,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "mongoose": "^4.13.4",
+    "mongoose": "^5.7.5",
     "whatwg-fetch": "^2.0.3"
   }
 }
